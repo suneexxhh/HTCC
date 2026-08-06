@@ -1,10 +1,10 @@
 # HTCC
 Hierarchical Team Collaborative Cognition for Cooperative MARL
 
-HTCC extends the Multi-Agent Transformer (MAT) with an explicit team
-collaborative cognition module. It aggregates agent-wise interaction
-representations into team context, builds hierarchical team cognition, and
-feeds the shared cognition back to individual agents through gated feedback.
+HTCC is a cooperative MARL framework that explicitly organizes distributed
+agent-wise interaction representations into team-level cognition. It builds
+hierarchical team cognition from shared team context and feeds the resulting
+guidance back to individual agents through gated feedback.
 
 ## Installation
 

@@ -1,4 +1,4 @@
-from memat import algorithms, envs, runner, scripts, utils, config
+from htcc import algorithms, envs, runner, scripts, utils, config
 
 
 __version__ = "0.1.0"

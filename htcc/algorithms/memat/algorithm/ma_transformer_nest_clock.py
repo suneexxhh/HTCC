@@ -2,12 +2,12 @@ import torch
 import torch.nn as nn
 import numpy as np
 
-from memat.algorithms.utils.util import check
-from memat.algorithms.utils.transformer_act import discrete_autoregreesive_act
-from memat.algorithms.utils.transformer_act import discrete_parallel_act
-from memat.algorithms.utils.transformer_act import continuous_autoregreesive_act
-from memat.algorithms.utils.transformer_act import continuous_parallel_act
-from memat.algorithms.memat.algorithm.ma_transformer_nest import (
+from htcc.algorithms.utils.util import check
+from htcc.algorithms.utils.transformer_act import discrete_autoregreesive_act
+from htcc.algorithms.utils.transformer_act import discrete_parallel_act
+from htcc.algorithms.utils.transformer_act import continuous_autoregreesive_act
+from htcc.algorithms.utils.transformer_act import continuous_parallel_act
+from htcc.algorithms.htcc.algorithm.ma_transformer_nest import (
     CMSResidualBlock,
     Decoder,
     EncodeBlock,

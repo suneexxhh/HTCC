@@ -11,11 +11,11 @@ import torch
 import yaml
 
 sys.path.append("../../")
-from memat.config import get_config, print_config
-from memat.runner.shared.hands_runner import HandsRunner as Runner
-from memat.envs.dexteroushandenvs.utils.config import get_args, parse_sim_params, load_env_cfg
-from memat.envs.dexteroushandenvs.utils.parse_task import parse_task
-from memat.envs.dexteroushandenvs.utils.process_marl import get_AgentIndex
+from htcc.config import get_config, print_config
+from htcc.runner.shared.hands_runner import HandsRunner as Runner
+from htcc.envs.dexteroushandenvs.utils.config import get_args, parse_sim_params, load_env_cfg
+from htcc.envs.dexteroushandenvs.utils.parse_task import parse_task
+from htcc.envs.dexteroushandenvs.utils.process_marl import get_AgentIndex
 
 
 def make_train_env(all_args):

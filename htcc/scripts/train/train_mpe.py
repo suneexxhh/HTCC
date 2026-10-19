@@ -8,10 +8,10 @@ import numpy as np
 from pathlib import Path
 import torch
 sys.path.append("../../")
-from memat.config import get_config, print_config
-from memat.envs.mpe.MPE_env import MPEEnv
-from memat.runner.shared.mpe_runner import MPERunner as Runner
-from memat.envs.env_wrappers import SubprocVecEnv, DummyVecEnv
+from htcc.config import get_config, print_config
+from htcc.envs.mpe.MPE_env import MPEEnv
+from htcc.runner.shared.mpe_runner import MPERunner as Runner
+from htcc.envs.env_wrappers import SubprocVecEnv, DummyVecEnv
 
 """Train script for MPEs."""
 

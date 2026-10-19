@@ -8,10 +8,10 @@ from pathlib import Path
 import torch
 
 sys.path.append("../../")
-from memat.config import get_config, print_config
-from memat.envs.football.football_env import FootballEnv
-from memat.runner.shared.football_runner import FootballRunner as Runner
-from memat.envs.env_wrappers import ShareSubprocVecEnv, ShareDummyVecEnv
+from htcc.config import get_config, print_config
+from htcc.envs.football.football_env import FootballEnv
+from htcc.runner.shared.football_runner import FootballRunner as Runner
+from htcc.envs.env_wrappers import ShareSubprocVecEnv, ShareDummyVecEnv
 
 
 """Train script for SMAC."""

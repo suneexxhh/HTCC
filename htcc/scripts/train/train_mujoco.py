@@ -9,10 +9,10 @@ from pathlib import Path
 import torch
 
 sys.path.append("../../")
-from memat.config import get_config, print_config
-from memat.envs.ma_mujoco.multiagent_mujoco.mujoco_multi import MujocoMulti
-from memat.runner.shared.mujoco_runner import MujocoRunner as Runner
-from memat.envs.env_wrappers import ShareSubprocVecEnv, ShareDummyVecEnv
+from htcc.config import get_config, print_config
+from htcc.envs.ma_mujoco.multiagent_mujoco.mujoco_multi import MujocoMulti
+from htcc.runner.shared.mujoco_runner import MujocoRunner as Runner
+from htcc.envs.env_wrappers import ShareSubprocVecEnv, ShareDummyVecEnv
 
 """Train script for MuJoCo."""
 def make_train_env(all_args):

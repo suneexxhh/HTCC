@@ -8,12 +8,12 @@ import numpy as np
 from pathlib import Path
 import torch
 sys.path.append("../../")
-from memat.config import get_config, print_config
-from memat.envs.starcraft2.StarCraft2_Env import StarCraft2Env
-from memat.envs.starcraft2.Random_StarCraft2_Env import RandomStarCraft2Env
-from memat.envs.starcraft2.smac_maps import get_map_params
-from memat.envs.env_wrappers import ShareSubprocVecEnv, ShareDummyVecEnv
-from memat.runner.shared.smac_runner import SMACRunner as Runner
+from htcc.config import get_config, print_config
+from htcc.envs.starcraft2.StarCraft2_Env import StarCraft2Env
+from htcc.envs.starcraft2.Random_StarCraft2_Env import RandomStarCraft2Env
+from htcc.envs.starcraft2.smac_maps import get_map_params
+from htcc.envs.env_wrappers import ShareSubprocVecEnv, ShareDummyVecEnv
+from htcc.runner.shared.smac_runner import SMACRunner as Runner
 
 """Train script for SMAC."""
 

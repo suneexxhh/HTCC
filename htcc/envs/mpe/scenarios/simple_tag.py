@@ -1,6 +1,6 @@
 import numpy as np
-from memat.envs.mpe.core import World, Agent, Landmark
-from memat.envs.mpe.scenario import BaseScenario
+from htcc.envs.mpe.core import World, Agent, Landmark
+from htcc.envs.mpe.scenario import BaseScenario
 
 class Scenario(BaseScenario):
     def make_world(self, args):

@@ -15,7 +15,7 @@ import torch
 import numpy as np
 import copy
 
-from memat.envs.dexteroushandenvs.tasks.hand_base.base_task import BaseTask
+from htcc.envs.dexteroushandenvs.tasks.hand_base.base_task import BaseTask
 
 # VecEnv Wrapper for RL training
 class MultiVecTask():

@@ -6,8 +6,8 @@ adversary to goal. Adversary is rewarded for its distance to the goal.
 
 
 import numpy as np
-from memat.envs.mpe.core import World, Agent, Landmark
-from memat.envs.mpe.scenario import BaseScenario
+from htcc.envs.mpe.core import World, Agent, Landmark
+from htcc.envs.mpe.scenario import BaseScenario
 import random
 
 

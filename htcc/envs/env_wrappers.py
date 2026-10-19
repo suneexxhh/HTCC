@@ -5,7 +5,7 @@ import numpy as np
 import torch
 from multiprocessing import Process, Pipe
 from abc import ABC, abstractmethod
-from memat.utils.util import tile_images
+from htcc.utils.util import tile_images
 
 class CloudpickleWrapper(object):
     """

@@ -35,9 +35,9 @@ Please following the instructios in https://github.com/PKU-MARL/DexterousHands.
 
 ## How to run
 After the required environments are installed, run the scripts in
-`memat/scripts`. For example, to run HTCC on one SMAC map:
+`htcc/scripts`. For example, to run HTCC on one SMAC map:
 ```bash
-sh memat/scripts/train_smac_variant.sh \
+sh htcc/scripts/train_smac_variant.sh \
   --map 5m_vs_6m --algo nest_mat_clock --seed 1 --gpu 0
 ```
 

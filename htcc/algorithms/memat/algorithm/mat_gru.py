@@ -4,11 +4,11 @@ from torch.nn import functional as F
 import math
 import numpy as np
 from torch.distributions import Categorical
-from memat.algorithms.utils.util import check, init
-from memat.algorithms.utils.transformer_act import discrete_autoregreesive_act
-from memat.algorithms.utils.transformer_act import discrete_parallel_act
-from memat.algorithms.utils.transformer_act import continuous_autoregreesive_act
-from memat.algorithms.utils.transformer_act import continuous_parallel_act
+from htcc.algorithms.utils.util import check, init
+from htcc.algorithms.utils.transformer_act import discrete_autoregreesive_act
+from htcc.algorithms.utils.transformer_act import discrete_parallel_act
+from htcc.algorithms.utils.transformer_act import continuous_autoregreesive_act
+from htcc.algorithms.utils.transformer_act import continuous_parallel_act
 
 
 def init_(m, gain=0.01, activate=False):

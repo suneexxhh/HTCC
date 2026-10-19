@@ -4,7 +4,7 @@ from torch.nn import functional as F
 import math
 import numpy as np
 from torch.distributions import Categorical, Normal
-from memat.algorithms.utils.util import check, init
+from htcc.algorithms.utils.util import check, init
 
 
 def init_(m, gain=0.01, activate=False):

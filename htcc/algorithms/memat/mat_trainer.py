@@ -1,9 +1,9 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from memat.utils.util import get_gard_norm, huber_loss, mse_loss
-from memat.utils.valuenorm import ValueNorm
-from memat.algorithms.utils.util import check
+from htcc.utils.util import get_gard_norm, huber_loss, mse_loss
+from htcc.utils.valuenorm import ValueNorm
+from htcc.algorithms.utils.util import check
 
 
 class MATTrainer:

@@ -1,9 +1,9 @@
 import torch
 import numpy as np
-from memat.utils.util import update_linear_schedule
-from memat.utils.util import get_shape_from_obs_space, get_shape_from_act_space
-from memat.algorithms.utils.util import check
-from memat.algorithms.memat.algorithm.ma_transformer import MultiAgentTransformer
+from htcc.utils.util import update_linear_schedule
+from htcc.utils.util import get_shape_from_obs_space, get_shape_from_act_space
+from htcc.algorithms.utils.util import check
+from htcc.algorithms.htcc.algorithm.ma_transformer import MultiAgentTransformer
 
 
 class TransformerPolicy:
@@ -47,19 +47,19 @@ class TransformerPolicy:
         self.tpdv = dict(dtype=torch.float32, device=device)
 
         if self.algorithm_name in ["memat", "mat_dec"]:
-            from memat.algorithms.memat.algorithm.ma_transformer import MultiAgentTransformer as MAT
+            from htcc.algorithms.htcc.algorithm.ma_transformer import MultiAgentTransformer as MAT
         elif self.algorithm_name in ["nest_mat_lite", "nest_mat"]:
-            from memat.algorithms.memat.algorithm.ma_transformer_nest import MultiAgentTransformer as MAT
+            from htcc.algorithms.htcc.algorithm.ma_transformer_nest import MultiAgentTransformer as MAT
         elif self.algorithm_name == "nest_mat_clock":
-            from memat.algorithms.memat.algorithm.ma_transformer_nest_clock import MultiAgentTransformer as MAT
+            from htcc.algorithms.htcc.algorithm.ma_transformer_nest_clock import MultiAgentTransformer as MAT
         elif self.algorithm_name == "memat_episode":
-            from memat.algorithms.memat.algorithm.ma_transformer_episode import MultiAgentTransformer as MAT
+            from htcc.algorithms.htcc.algorithm.ma_transformer_episode import MultiAgentTransformer as MAT
         elif self.algorithm_name == "mat_gru":
-            from memat.algorithms.memat.algorithm.mat_gru import MultiAgentGRU as MAT
+            from htcc.algorithms.htcc.algorithm.mat_gru import MultiAgentGRU as MAT
         elif self.algorithm_name == "mat_decoder":
-            from memat.algorithms.memat.algorithm.mat_decoder import MultiAgentDecoder as MAT
+            from htcc.algorithms.htcc.algorithm.mat_decoder import MultiAgentDecoder as MAT
         elif self.algorithm_name == "mat_encoder":
-            from memat.algorithms.memat.algorithm.mat_encoder import MultiAgentEncoder as MAT
+            from htcc.algorithms.htcc.algorithm.mat_encoder import MultiAgentEncoder as MAT
         else:
             raise NotImplementedError
 

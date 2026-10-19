@@ -12,8 +12,8 @@ import os
 import random
 import torch
 
-from memat.envs.dexteroushandenvs.utils.torch_jit_utils import *
-from memat.envs.dexteroushandenvs.tasks.hand_base.base_task import BaseTask
+from htcc.envs.dexteroushandenvs.utils.torch_jit_utils import *
+from htcc.envs.dexteroushandenvs.tasks.hand_base.base_task import BaseTask
 from isaacgym import gymtorch
 from isaacgym import gymapi
 

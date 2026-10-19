@@ -29,7 +29,7 @@ Examples:
   sh run_smac_variants.sh --map 3m --algo mat_dec --foreground -- --n_head 2
 
 By default this script starts training with nohup and writes logs/PID files under:
-  memat/scripts/logs/<exp>/ if --exp is set, otherwise memat/scripts/logs/<algorithm>[_b<beta>][_p<periods>]/
+  htcc/scripts/logs/<exp>/ if --exp is set, otherwise htcc/scripts/logs/<algorithm>[_b<beta>][_p<periods>]/
 Background multi-map/multi-seed launches are staggered by --launch-delay seconds, default 60.
 Use --gpus to assign one GPU per map in the same order as --maps. With multiple seeds,
 the same map-to-GPU assignment is reused for every seed. GPU ids may repeat.

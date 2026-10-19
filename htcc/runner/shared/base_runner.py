@@ -3,9 +3,9 @@ import os
 import numpy as np
 import torch
 from tensorboardX import SummaryWriter
-from memat.utils.shared_buffer import SharedReplayBuffer
-from memat.algorithms.memat.mat_trainer import MATTrainer as TrainAlgo
-from memat.algorithms.memat.algorithm.transformer_policy import TransformerPolicy as Policy
+from htcc.utils.shared_buffer import SharedReplayBuffer
+from htcc.algorithms.htcc.mat_trainer import MATTrainer as TrainAlgo
+from htcc.algorithms.htcc.algorithm.transformer_policy import TransformerPolicy as Policy
 
 def _t2n(x):
     """Convert torch tensor to a numpy array."""
